@@ -2,7 +2,7 @@
 	<div class="bottomNav">
 		<el-row>
 		  <el-col :span="24">
-		  21
+		  		
 		  </el-col>
 		</el-row>
 	</div>
