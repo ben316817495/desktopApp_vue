@@ -1,6 +1,7 @@
 <template>
 	<div class="indexDesktop">
-		<topheader v-on:click="plusAlert"></topheader>
+		<topheader ></topheader>
+    <el-button @click="ff" type="primary">主要按钮</el-button>
 	</div>
 </template>
 
@@ -10,10 +11,9 @@ export default {
   name: 'Indexdesktop',
   components: {topheader},
   methods: {
-    plusAlert: function () {
+    ff: function () {
       alert(12222)
     }
   }
 }
 </script>
-
