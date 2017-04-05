@@ -1,8 +1,7 @@
 <template>
 	<div class="topheader">
 		<el-row>
-		  <el-col :span="4">logo</el-col>
-		  <el-col :span="20" class="fff">
+		  <el-col :span="24">
 		  		<el-menu :default-active="activeIndex2" class="el-menu-demo" mode="horizontal" @select="handleSelect">
 					  <el-menu-item index="1">处理中心</el-menu-item>
 					  <el-submenu index="2">
@@ -11,8 +10,8 @@
 					    <el-menu-item index="2-2">选项2</el-menu-item>
 					    <el-menu-item index="2-3">选项3</el-menu-item>
 					  </el-submenu>
-					  <el-menu-item index="3"><a href="https://www.ele.me" target="_blank">订单管理</a></el-menu-item>
-					</el-menu>
+					  <el-menu-item index="3"><a>订单管理</a></el-menu-item>
+				</el-menu>
 		  </el-col>
 		</el-row>
 	</div>
@@ -21,7 +20,6 @@
  export default {
     data() {
       return {
-        activeIndex: '1',
         activeIndex2: '1'
       };
     },
@@ -32,4 +30,15 @@
     }
   }
 </script>
-<style>.fff{height:100px;}</style>
+<style>
+
+.topheader .el-menu{
+	background: #eee;
+    background-color: rgba(190,190,190,0.3);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.topheader .el-menu--horizontal .el-menu-item:hover,
+.topheader .el-menu--horizontal .el-submenu__title:hover {
+    background-color: rgba(214, 215, 216, 0.3);
+}
+</style>
