@@ -1,16 +1,17 @@
 <template>
 	<div class="indexDesktop">
-		<topheader></topheader>
+		<topheader v-on:click="plusAlert"></topheader>
 	</div>
 </template>
 
 <script>
-import topheader from './topheader'
+import topheader from '@/components/topheader'
 export default {
   name: 'Indexdesktop',
   components: {topheader},
-  data () {
-    return {
+  methods: {
+    plusAlert: function () {
+      alert(12222)
     }
   }
 }
