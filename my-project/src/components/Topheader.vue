@@ -20,7 +20,7 @@
  export default {
     data() {
       return {
-        activeIndex2: '1'
+        activeIndex2: '3'
       };
     },
     methods: {
@@ -31,7 +31,9 @@
   }
 </script>
 <style>
-
+.topheader{
+	width: 100%;
+}
 .topheader .el-menu{
 	background: #eee;
     background-color: rgba(190,190,190,0.3);
