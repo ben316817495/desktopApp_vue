@@ -1,18 +1,27 @@
 <template>
 	<div class="desktopCenter">
 		<div class="desktopCenter_background"></div>
-		<div class="">
+		<div class="desktopCenter_cont">
+			
 			<div class="iconApp">
 				<div class="iconApp_img">
 					<img src="../assets/iconApp/computer.png">
 				</div>
-
 			</div>
+
 		</div>
 	</div>
 </template>
 
 <style>
+	.desktopCenter_cont{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top:0;
+		bottom:0;
+		padding:60px 10px 32px;
+	}
 	.desktopCenter_background{
 		height:100%;
 		left: 0;
