@@ -1,6 +1,14 @@
 <template>
 	<div class="desktopCenter">
 		<div class="desktopCenter_background"></div>
+		<div class="">
+			<div class="iconApp">
+				<div class="iconApp_img">
+					<img src="../assets/iconApp/computer.png">
+				</div>
+
+			</div>
+		</div>
 	</div>
 </template>
 
@@ -25,6 +33,13 @@
 	    background-size: cover;
 	    -ms-background-size: cover;
 	    background-size: 100% 100%;
+	}
+	.iconApp_img{
+		height: 70px;
+    	width: 70px;
+	}
+	.iconApp_img img{
+		width: 100%;
 	}
 </style>
 

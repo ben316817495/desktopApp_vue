@@ -2,10 +2,29 @@
 	<div class="bottomNav">
 		<el-row>
 		  <el-col :span="24" class="task_tab">
+		  	<startband v-bind:startband="startband"></startband>
+		  	<div class="startBtn" @click="alertStart"></div>
 		  </el-col>
 		</el-row>
 	</div>
 </template>
+
+<script>
+	import startband from '@/components/bottomNav/startband'
+	export default {
+		components: {startband},//components
+		data(){
+			return{
+				startband:false,
+			}
+		},//data()
+		methods: {
+			alertStart(){
+				this.startband = !this.startband;
+			},//alertStart()
+		 },//methods
+	}	
+</script>
 
 <style>
 	.bottomNav{
@@ -38,5 +57,14 @@
 	    padding: 0;
 	    margin: 0;
 	    background: url(../assets/taskbarbg.png);
+	}
+	.startBtn{
+		width:50px;
+		height:50px;
+		background-color:#20a0ff;	
+		position: absolute;
+		bottom:0;
+		left:10px;
+		border-radius: 50%;
 	}
 </style>
