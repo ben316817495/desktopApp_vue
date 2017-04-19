@@ -40,7 +40,7 @@
 	    background: rgba(0,0,0,0.5);
 
 	}
-	.slide-fade-enter-active {
+	/*.slide-fade-enter-active {
 	  transition: all .3s ease;
 	}
 	.slide-fade-leave-active {
@@ -49,7 +49,7 @@
 	.slide-fade-enter, .slide-fade-leave-active {
 	  transform: translateX(10px);
 	  opacity: 0;
-	}
+	}*/
 	.setUpPanel{
 	    background: #fff;
     	border: solid 1px #365167;

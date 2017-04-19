@@ -3,13 +3,16 @@
 		<div class="desktopCenter_background"></div>
 		<div class="desktopCenter_cont">
 			
-				<div class="iconApp">
+				<div class="iconApp" @dblclick="fer">
 					<div class="iconApp_img">
 						<img src="../assets/iconApp/computer.png">
 					</div>
-					<div class="iconApp_fontStyle iconApp_fontBg">我的电脑</div>
+					<div class="iconApp_fontStyle iconApp_fontBg" >我的电脑</div>
 				</div>
-
+				
+				<transition name="slide-fade">
+						<folderPopup v-show="showfolderPopup"></folderPopup>
+				</transition>
 		</div>
 	</div>
 </template>
@@ -91,11 +94,33 @@
 		-moz-text-shadow:#000 1px 0 0,#000 0 1px 0,#000 -1px 0 0,#000 0 -1px 0;
 		*filter: Glow(color=#000, strength=1);
 	}
+
+	.slide-fade-enter-active {
+	  transition: all .3s ease;
+	}
+	.slide-fade-leave-active {
+	  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+	}
+	.slide-fade-enter, .slide-fade-leave-active {
+	  transform: translateX(10px);
+	  opacity: 0;
+	}
 </style>
 
 <script>
-
+import folderPopup from '@/components/folderPopup'
  export default {
-
+ 	components:{folderPopup},
+ 	data(){
+ 		return {
+ 			showfolderPopup:false,
+    	}
+ 	},
+	methods: {
+		fer(){
+			//alert(2);
+			this.showfolderPopup = !this.showfolderPopup;
+		},//fer()
+	},
  }
  </script>
