@@ -63,8 +63,24 @@
 		height:50px;
 		background-color:#20a0ff;	
 		position: absolute;
+		overflow: hidden;
 		bottom:0;
 		left:10px;
 		border-radius: 50%;
+		background: url(http://www.sublimetext.com/images/windows_48.png);
+		background-size:40px;
+		background-repeat: no-repeat;
+		background-position:center;
+		
+	}
+	.startBtn::after{
+		content: '';
+		width:50px;
+		height:50px;
+		background: rgba(0,0,0,0.3);
+	    border-top: 1px solid rgba(0,0,0,0.15);
+	    position: absolute;
+	    border-radius: 50%;
+	    z-index: -1;
 	}
 </style>
