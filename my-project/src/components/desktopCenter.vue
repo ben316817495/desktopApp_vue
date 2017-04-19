@@ -94,6 +94,7 @@
 </style>
 
 <script>
+
  export default {
 
  }
