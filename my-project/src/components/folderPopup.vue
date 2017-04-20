@@ -17,7 +17,6 @@
                       <i class="icon-close"></i>
                   </a>
             </div>
-            
 
         </div>
     </el-col>
@@ -68,7 +67,6 @@ export default {
       padding:10px 10px;
       background-color: rgba(190,190,190,0.7);
     }
-    
   /* .folderPopup .folderPopup_cont{
         background-color: #fff;
         width: 98%;
@@ -101,30 +99,29 @@ export default {
       -pie-background: linear-gradient(to top,#eee,#bbb);
    }
    .redCloseBtn:hover,.redCloseBtn:active{
-    color:#fff;
-    background-color: #de2f0a;
-     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#de2f0a');
-    background: #de2f0a;
-    background-image: -webkit-linear-gradient(top,#f7d8d8,#de2f0a);
-    background-image: -moz-linear-gradient(top,#f7d8d8,#de2f0a);
-    background-image: -o-linear-gradient(top,#f7d8d8,#de2f0a);
-    background-image: -ms-linear-gradient(top,#f7d8d8,#de2f0a);
-    background-image: linear-gradient(top,#f7d8d8,#de2f0a);
-    -pie-background: linear-gradient(to top,#f7d8d8,#de2f0a);
+      color:#fff;
+      background-color: #de2f0a;
+       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#de2f0a');
+      background: #de2f0a;
+      background-image: -webkit-linear-gradient(top,#f7d8d8,#de2f0a);
+      background-image: -moz-linear-gradient(top,#f7d8d8,#de2f0a);
+      background-image: -o-linear-gradient(top,#f7d8d8,#de2f0a);
+      background-image: -ms-linear-gradient(top,#f7d8d8,#de2f0a);
+      background-image: linear-gradient(top,#f7d8d8,#de2f0a);
+      -pie-background: linear-gradient(to top,#f7d8d8,#de2f0a);
    }
    .yellowBtn:hover,.yellowBtn:active{
       color:#fff;
       background-color:#EAB11E;
-       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#EAB11E');
-    background: #EAB11E;
-    background-image: -webkit-linear-gradient(top,#fdd774,#EAB11E);
-    background-image: -moz-linear-gradient(top,#fdd774,#EAB11E);
-    background-image: -o-linear-gradient(top,#fdd774,#EAB11E);
-    background-image: -ms-linear-gradient(top,#fdd774,#EAB11E);
-    background-image: linear-gradient(top,#fdd774,#EAB11E);
-    -pie-background: linear-gradient(to top,#fdd774,#EAB11E);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#EAB11E');
+      background: #EAB11E;
+      background-image: -webkit-linear-gradient(top,#fdd774,#EAB11E);
+      background-image: -moz-linear-gradient(top,#fdd774,#EAB11E);
+      background-image: -o-linear-gradient(top,#fdd774,#EAB11E);
+      background-image: -ms-linear-gradient(top,#fdd774,#EAB11E);
+      background-image: linear-gradient(top,#fdd774,#EAB11E);
+      -pie-background: linear-gradient(to top,#fdd774,#EAB11E);
    }
-
    .btnGroup{
       position: absolute;
       top: 5px;
@@ -132,9 +129,7 @@ export default {
    }
    .folderPopup .folderPopup_cont{
       position:relative;
-    
    }
    .folderPopup .folderPopup_contBg{
-      
    }
 </style>
