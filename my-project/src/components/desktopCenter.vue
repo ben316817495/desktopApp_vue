@@ -11,7 +11,7 @@
 				</div>
 				
 				<transition name="slide-fade">
-						<folderPopup v-show="showfolderPopup"></folderPopup>
+						<folderPopup v-show="showfolderPopup" v-on:btnListenEvent="btnListenEvent_fn"></folderPopup>
 				</transition>
 		</div>
 	</div>
@@ -117,6 +117,13 @@ import folderPopup from '@/components/folderPopup'
     	}
  	},
 	methods: {
+		btnListenEvent_fn(msg){
+			switch(msg){
+				case "close":
+					this.showfolderPopup =false;
+				break;
+			}
+		},//btnListenEvent_fn()
 		fer(){
 			//alert(2);
 			this.showfolderPopup = !this.showfolderPopup;
