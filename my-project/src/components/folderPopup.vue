@@ -22,7 +22,13 @@
     </el-col>
    
     <el-col :span="24" class="folderPopup_cont">
+          <el-col :span="24">
+              <topControllerNav></topControllerNav>
+          </el-col>
           <div class="folderPopup_contBg">
+            <el-col :span="6">
+               <leftTreeNav></leftTreeNav>
+            </el-col>
           </div>
      </el-col>
 
@@ -32,7 +38,10 @@
 </template>
 
 <script>
+import leftTreeNav from '@/components/folderPanel/leftTreeNav'
+import topControllerNav from '@/components/folderPanel/topControllerNav'
 export default {
+  components: {leftTreeNav,topControllerNav},
   data () {
     return {
 
