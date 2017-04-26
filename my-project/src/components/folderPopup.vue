@@ -25,11 +25,13 @@
           <el-col :span="24">
               <topControllerNav></topControllerNav>
           </el-col>
-          <div class="el-row folderPopup_contBg">
-            <el-col :span="6">
-               <leftTreeNav></leftTreeNav>
-            </el-col>
-          </div>
+          <el-col :span="24">
+            <el-row class="folderPopup_contBg">
+              <el-col :span="6">
+                 <leftTreeNav></leftTreeNav>
+              </el-col>
+            </el-row>
+          </el-col>
      </el-col>
 
 

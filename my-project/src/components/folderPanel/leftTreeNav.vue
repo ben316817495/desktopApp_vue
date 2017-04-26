@@ -21,6 +21,6 @@
 		border-right:1px solid #f5f5f5;
 	}
 	.leftTreeNav .treeExternal{
-		
+		min-height: 100%;
 	}
 </style>
