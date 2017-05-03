@@ -1,6 +1,6 @@
 <template>
   <div class="folderPopup">
-    <el-row>
+    <el-row class="heightFull">
      
      <el-col :span="24">
         <div class="">
@@ -21,13 +21,14 @@
         </div>
     </el-col>
    
-    <el-col :span="24" class="folderPopup_cont">
-          <el-col :span="24">
+    <el-col :span="24" class="folderPopup_cont heightFull">
+        <el-col :span="24">
               <topControllerNav></topControllerNav>
           </el-col>
-          <el-col :span="24">
-            <el-row class="folderPopup_contBg">
-              <el-col :span="6">
+          
+          <el-col :span="24"  class="heightFull">
+            <el-row class="folderPopup_contBg heightFull">
+              <el-col :span="6" class="heightFull">
                  <leftTreeNav></leftTreeNav>
               </el-col>
             </el-row>
@@ -58,6 +59,11 @@ export default {
 </script>
 
 <style>
+
+.{
+  position: fixed;
+    width: 100%;
+}
     .folderPopup{
       top:75px;
       width: 75%;

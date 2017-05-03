@@ -1,7 +1,7 @@
 <template>
 	<div class="leftTreeNav">
 		<div class="treeExternal">
-			leftTreeNav
+			<span v-for="n in 100">leftTreeNav</span>
 		</div>
 	</div>
 </template>
@@ -11,6 +11,7 @@
 		position: relative;
 		padding:10px;
 		height: 100%;
+		overflow: auto;
 	}
 	.leftTreeNav::before{
 		content: '';
@@ -21,6 +22,7 @@
 		border-right:1px solid #f5f5f5;
 	}
 	.leftTreeNav .treeExternal{
-		min-height: 100%;
+		height: 100%;
+		overflow: auto;
 	}
 </style>
