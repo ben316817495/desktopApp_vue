@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 //初始化样式
-.reset-css(){
+.ww-reset-css(){
 	 html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
 	 html,body{
    			height: 100%;
@@ -11,21 +11,499 @@
     		overflow-x: hidden;
     		font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
 		}
-	* {
+	*{
 	    -webkit-box-sizing: border-box;
 	    -moz-box-sizing: border-box;
 	    box-sizing: border-box;
 	}
-
+	#app {
+	    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+	    -webkit-font-smoothing: antialiased;
+	    -moz-osx-font-smoothing: grayscale;
+	    color: #2c3e50;
+	  }
 }
-
-
-.height_diy(@h:100%){
+.ww-width(@w:100%){
+	width:@w;
+}
+.ww-height(@h:100%){
 	height: @h;
 }
+//浮动
+.ww-fl(l){
+    float: left;
+}
+.ww-fr(r){
+  float: right;
+}
+//定位
+.ww-rel(@rel:relative){
+  position: @rel;
+}
+.ww-abs(@abs:absolute){
+  position: @abs;
+}
+.ww-fix(@fix:fixed){
+  position: @fix;
+}
+//全局定位
+.ww-pos (r){
+  position: relative;
+}
+.ww-pos (a){
+  position: absolute;
+}
+.ww-pos (f){
+  position: fixed;
+}
+
+//文字垂直居中
+.txt-ver(@h){
+  height: @h;
+  line-height: @h;
+}
+
+.ww-top(@val:0){
+	top:@val;
+}
+.ww-left(@val:0){
+	left:@val;
+}
+.ww-right(@val:0){
+	right:@val;
+}
+.ww-bottom(@val:0){
+	bottom:@val;
+}
+.ww-backgroud-colorRGB(@val){
+	background-color:@val;
+}
+.ww-backgroud-colorHEX-RGBA(@RGB:#bebebe,@A:30%){
+	background-color:fade(@RGB, @A); 
+}
+.ww-backgroud-colorHEX(@val:#eee){
+	background-color:@val;
+}
+
+
+//圆角全部
+.ww-border-radius(all,@val:5px){
+	-webkit-border-radius: @val;
+	-moz-border-radius: @val;
+	border-radius: @val;
+}
+//单角
+.ww-border-radius(topLeft,@val:5px){
+	-webkit-border-top-left-radius: @val;
+	-moz-border-top-left-radius: @val;
+	border-top-left-radius: @val;
+
+}
+.ww-border-radius(topRight,@val:5px){
+	-webkit-border-top-right-radius: @val;
+	-moz-border-top-right-radius: @val;
+	border-top-right-radius: @val;
+}
+.ww-border-radius(bottomLeft,@val:5px){
+	-webkit-border-bottom-left-radius: @val;
+	-moz-border-bottom-left-radius: @val;
+	border-bottom-left-radius: @val;
+}
+.ww-border-radius(bottomRight,@val:5px){
+	-webkit-border-bottom-right-radius: @val;
+	-moz-border-bottom-right-radius: @val;
+	border-bottom-right-radius: @val;
+}
+//单边
+.ww-border-radius(top,@val:5px) {
+  .ww-border-radius(topLeft,@val);
+  .ww-border-radius(topRight,@val);
+}
+.ww-border-radius(right,@val:5px) {
+  .ww-border-radius(topRight,@val);
+  .ww-border-radius(bottomRight,@val);
+}
+.ww-border-radius(bottom,@val:5px) {
+   .ww-border-radius(bottomRight,@val);
+   .ww-border-radius(bottomLeft,@val);
+}
+.ww-border-radius(left,@val:5px) {
+   .ww-border-radius(topLeft,@val);
+  .ww-border-radius(bottomLeft,@val);
+}
+
+
+
+.ww-overflow (h){
+ overflow: hidden;	
+}
+.ww-overflow (s){
+ overflow: scroll;	
+}
+.ww-overflow (v){
+ overflow: visible;	
+}
+.ww-overflow (a){
+ overflow: auto;	
+}
+.ww-overflow (i){
+ overflow: inherit;	
+}
+
+.ww-color(@c:#fff){
+	color:@c;
+}
+
+.ww-transition(@t:all,@f:ease,@s:.3s){
+	    -webkit-transition: @arguments;
+	    -moz-transition: @arguments;
+	    -o-transition: @arguments;
+	    -ms-transition: @arguments;
+	    transition: @arguments;
+}
+//
+.btndefull(@c1:#eeeeee,@c2:#bbbbbb){
+	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=@c1, endColorstr=@c2);
+      .ww-backgroud-colorHEX(@c2);
+      background-image: -webkit-linear-gradient(top,@c1,@c2);
+      background-image: -moz-linear-gradient(top,@c1,@c2);
+      background-image: -o-linear-gradient(top,@c1,@c2);
+      background-image: -ms-linear-gradient(top,@c1,@c2);
+      background-image: linear-gradient(top,@c1,@c2);
+      -pie-background: linear-gradient(to top,@c1,@c2);
+}
+
+
+
 
 //执行部分
-.reset-css();
- .heightFull{
- 	.height_diy()
+.ww-reset-css();
+.heightFull{
+ 	.ww-height();
  }
+
+
+//desktopCenter.vue
+.desktopCenter{
+	.desktopCenter_cont{
+		position: absolute;
+		word-break:break-all;
+		word-wrap:break-word;
+		left: 0;
+		right: 0;
+		top:0;
+		bottom:0;
+		padding:60px 30px 32px;
+		display: flex;
+		display: -webkit-flex; /* Safari */
+		flex-wrap:wrap;
+		flex-direction:column;
+		align-items: flex-start;
+	    align-content: flex-start;
+	    justify-content: flex-start;
+	}
+	.desktopCenter_background{
+		height:100%;
+		left: 0;
+		right: 0;
+		top:0;
+		bottom: 0;
+		position: absolute;
+		background-image:url('http://demo.kalcaddle.com/static/images/wall_page/7.jpg');
+		background-attachment: fixed;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    -webkit-background-size: cover;
+	    background-size: cover;
+	    -ms-background-size: cover;
+	    background-size: 100% 100%;
+	    .ww-transition();
+	}
+	.flex_iconApp{
+		width:90px;
+	}
+	.iconApp{
+		width:90px;
+		height: 100px;
+		text-align: center;
+		margin:10px;
+	}
+	.iconApp_img{
+		height: 70px;
+    	width: 70px;
+    	margin:0 auto 5px;
+	}
+	.iconApp_img img{
+		width: 100%;
+	}
+
+	.iconApp_fontBg{
+		margin-top: 6px;
+	    line-height: 1.7em;
+	    padding-top: 1px;
+	    border-radius: 18px;
+		background: rgba(0,0,0,0.15);
+    	border: none;
+    	margin-left: 0px;
+	}
+	.iconApp_fontStyle{
+		overflow:hidden;text-overflow:ellipsis; white-space: nowrap;
+		font-size: 12px;
+		color:#fff;
+		text-shadow:#000 1px 0 0,#000 0 1px 0,#000 -1px 0 0,#000 0 -1px 0;
+		-webkit-text-shadow:#000 1px 0 0,#000 0 1px 0,#000 -1px 0 0,#000 0 -1px 0;
+		-moz-text-shadow:#000 1px 0 0,#000 0 1px 0,#000 -1px 0 0,#000 0 -1px 0;
+		*filter: Glow(color=#000, strength=1);
+	}
+
+	.slide-fade-enter-active {
+	  transition: all .3s ease;
+	}
+	.slide-fade-leave-active {
+	  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+	}
+	.slide-fade-enter, .slide-fade-leave-active {
+	  transform: translateX(10px);
+	  opacity: 0;
+	}
+
+
+}//desktopCenter.vue
+
+//Topheader.vue
+ .topheader{
+	.ww-width();
+	.ww-fix();
+	.ww-top();
+	.el-menu{
+		.ww-backgroud-colorHEX();
+		.ww-backgroud-colorHEX-RGBA();
+		box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	}
+	.el-menu--horizontal .el-menu-item:hover,
+	.el-menu--horizontal .el-submenu__title:hover {
+	    .ww-backgroud-colorRGB(rgba(214, 215, 216, 0.3));
+	}
+}
+
+//folderPopup.vue
+ .folderPopup{
+ 		.ww-top(75px);
+ 		.ww-width(75%);
+ 		.ww-bottom(35px);
+ 		.ww-border-radius(all,10px);
+ 		.ww-overflow(h);
+ 		.ww-abs();
+      	border:3px solid rgba(190,190,190,0.7);
+      	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      	.ww-backgroud-colorHEX(#fff);
+
+      	.titleText{
+	      	.ww-rel();
+	      	padding:10px 10px;
+	      	.ww-backgroud-colorRGB(rgba(190,190,190,0.7));
+	    }
+	    .folderPopup_contBg{
+	    	.ww-height(95%);
+    		padding-bottom: 20px;
+	    }
+	    .contBgLeft_h{
+	    	 .ww-height(95%);
+	    }
+      	.controlBtn{
+      		  margin-left:5px;
+		      .ww-fl(l);
+		      display: block;
+		      text-decoration: none;
+		      outline: none;
+		      cursor: pointer;
+		      .ww-color(#aaa);  
+		      border: 1px solid #bbb;
+		      .ww-border-radius(all,10px);
+		      .ww-width(20px);
+		      .ww-height(20px);
+		      font-size: 1.2em;
+		      line-height: 20px;
+		      text-align: center;
+      		.btndefull();
+      	}
+      	.redCloseBtn{
+      		&:hover,&:active{
+      			.ww-color();
+      			.ww-backgroud-colorHEX(#de2f0a);
+      			.btndefull(#f7d8d8,#de2f0a);
+      		}
+      	}
+      	.yellowBtn{
+      		&:hover,&:active{
+      			.ww-color();
+      			.ww-backgroud-colorHEX(#EAB11E);
+      			.btndefull(#fdd774,#EAB11E);
+      		}
+
+      	}
+      	.btnGroup{
+	      .ww-abs();
+	      .ww-top(5px);
+	      .ww-right(5px);
+	   }
+      	.folderPopup_cont{
+	     .ww-rel();
+	     .ww-height();
+	   }
+
+    }//folderPopup.vue
+
+
+ //bottomNav.vue
+	.bottomNav{
+		position: fixed;
+    	bottom: 1px;
+    	left: 0;
+    	width: 100%;
+    	.task_tab {
+		    background: rgba(0,0,0,0.05);
+		    border-top: 1px solid rgba(0,0,0,0.05);
+		}
+		.task_tab {
+		    position: fixed;
+		    bottom: 1px;
+		    left: 0;
+		    width: 100%;
+		    height: 30px;
+		    z-index: 100;
+		    background: rgba(0,0,0,0.1);
+		    border-top: 1px solid rgba(0,0,0,0.15);
+		    color: #444;
+		}
+		.task_tab {
+		    height: 32px;
+		    position: fixed;
+		    bottom: 0;
+		    left: 0;
+		    width: 100%;
+		    padding: 0;
+		    margin: 0;
+		    background: url(../../../assets/taskbarbg.png);
+		}
+		.startBtn{
+			width:50px;
+			height:50px;
+			background-color:#20a0ff;	
+			position: absolute;
+			overflow: hidden;
+			bottom:0;
+			left:10px;
+			border-radius: 50%;
+			background: url(http://www.sublimetext.com/images/windows_48.png);
+			background-size:40px;
+			background-repeat: no-repeat;
+			background-position:center;
+			&::after{
+				content: '';
+				width:50px;
+				height:50px;
+				background: rgba(0,0,0,0.3);
+			    border-top: 1px solid rgba(0,0,0,0.15);
+			    position: absolute;
+			    border-radius: 50%;
+			    z-index: -1;
+			}
+			
+		}
+	}
+
+ //bottomNav.vue
+
+//startband.vue
+ .startband{
+		border-top-right-radius: 10px;
+		bottom: 32px;
+		 opacity: 0.9;
+		height: 404px;
+    	width: 390px;
+    	.ww-abs();
+    	border: solid 1px #102a3e;
+    	box-shadow: inset 0 0 1px #fff;
+	    -webkit-box-shadow: inset 0 0 1px #fff;
+	    background-color: #619bb9;
+	    background: -webkit-gradient(linear,center top,center bottom,from(#327aa4),color-stop(45%,#2e4b5a),to(#5cb0dc));
+	    background: rgba(0,0,0,0.5);
+
+	.setUpPanel{
+	    background: #fff;
+    	border: solid 1px #365167;
+    	width: 250px;
+    	height: 385px;
+    	margin: 7px 0 7px 7px;
+    	padding:0;
+    	li{
+			list-style: none;
+		}
+    	li .leftspliter{
+		    margin: 0 15px 0 15px;
+    		border-top: solid 1px #d6e5f5;
+		}
+		li a{
+			border: solid 1px transparent;
+		    display: block;
+		    padding: 0 3px;
+		    height: 30px;
+		    line-height: 30px;
+		    margin: 3px 10px;
+		    text-decoration: none;
+		    color:#444;
+		    &:hover {
+				height: 30px;
+			    line-height: 30px;
+			    border: solid 1px #7da2ce;
+			    -webkit-border-radius: 3px;
+			    -moz-border-radius: 3px;
+			    border-radius: 3px;
+			    -webkit-box-shadow: inset 0 0 1px #fff;
+			    -moz-box-shadow: inset 0 0 1px #fff;
+			    box-shadow: inset 0 0 1px #fff;
+			    background-color: #cfe3fd;
+			    background: -webkit-gradient(linear,center top,center bottom,from(#dcebfd),to(#c2dcfd));
+			}
+		}
+	}
+
+}
+//startband.vue
+
+//leftTreeNav.vue
+.leftTreeNav{
+		position: relative;
+		padding:10px;
+		.ww-height();
+		overflow: auto;
+		&::before{
+			content: '';
+			.ww-height();
+			.ww-abs();
+			.ww-right();
+			.ww-bottom();
+			border-right:1px solid #f5f5f5;
+		}
+		.treeExternal{
+			.ww-height();
+			overflow: auto;
+		}
+}
+//leftTreeNav.vue
+
+//topControllerNav.vue
+	.topControllerNav{
+	    padding: 10px;
+		height:50px;
+		border:1px solid #f5f5f5;
+	}
+//topControllerNav.vue
+
+
+/* 设置滚动条的样式 */::-webkit-scrollbar {    width: 12px;}
+/* 滚动槽 */::-webkit-scrollbar-track {    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);    border-radius: 10px;}
+/* 滚动条滑块 */::-webkit-scrollbar-thumb {    border-radius: 10px;    background: rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);}
+ /* ::-webkit-scrollbar-thumb:window-inactive {    background: rgba(255,0,0,0.4);}*/

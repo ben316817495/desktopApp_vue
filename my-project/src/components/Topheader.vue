@@ -30,19 +30,3 @@
     }
   }
 </script>
-<style>
-.topheader{
-	width: 100%;
-	position: fixed;
-	top:0;
-}
-.topheader .el-menu{
-	background: #eee;
-    background-color: rgba(190,190,190,0.3);
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-.topheader .el-menu--horizontal .el-menu-item:hover,
-.topheader .el-menu--horizontal .el-submenu__title:hover {
-    background-color: rgba(214, 215, 216, 0.3);
-}
-</style>
