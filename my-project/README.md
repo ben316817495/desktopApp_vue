@@ -62,3 +62,6 @@ build: {
  assetsPublicPath: '/',
  改为
   assetsPublicPath: './',
+
+  问题2
+ # 安装模板时需要注意安装的代码严格模式
