@@ -477,7 +477,9 @@
 		position: relative;
 		padding:10px;
 		.ww-height();
-		overflow: auto;
+		//overflow: auto;
+		overflow-y: auto;
+    	overflow-x: hidden;
 		&::before{
 			content: '';
 			.ww-height();
@@ -488,7 +490,9 @@
 		}
 		.treeExternal{
 			.ww-height();
-			overflow: auto;
+			//overflow: auto;
+			overflow-y: auto;
+    		overflow-x: hidden;
 		}
 }
 //leftTreeNav.vue

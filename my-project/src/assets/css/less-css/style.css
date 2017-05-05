@@ -340,7 +340,8 @@ body {
   position: relative;
   padding: 10px;
   height: 100%;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .leftTreeNav::before {
   content: '';
@@ -352,7 +353,8 @@ body {
 }
 .leftTreeNav .treeExternal {
   height: 100%;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .topControllerNav {
   padding: 10px;
