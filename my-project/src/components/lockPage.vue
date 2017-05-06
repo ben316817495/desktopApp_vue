@@ -5,8 +5,8 @@
 		<div class="loginBox">
 			<div class="boxHeader">
 					<div class="boxHeaderImg"></div>
-					<div class="boxHeaderTit">MacOSX</div>
-					<p class="boxHeaderText">欢迎登陆MacOSX账户</p>
+					<!-- <div class="boxHeaderTit">MacOSX</div> -->
+					<p class="boxHeaderText">我是bone7</p>
 			</div>
 			<div class="boxBody">
 				<el-form ref="form" :model="form" label-width="80px">
