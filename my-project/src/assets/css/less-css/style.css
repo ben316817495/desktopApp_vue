@@ -381,3 +381,52 @@ body {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 /* ::-webkit-scrollbar-thumb:window-inactive {    background: rgba(255,0,0,0.4);}*/
+.loginPage .desktopCenter_background {
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background-image: url('http://demo.kalcaddle.com/static/images/wall_page/7.jpg');
+  background-attachment: fixed;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -ms-background-size: cover;
+  background-size: 100% 100%;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.loginPage .loginBox {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: rgba(190, 190, 190, 0.5);
+  position: absolute;
+  z-index: 10;
+  top: 10%;
+  left: 30%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.loginPage .boxHeader {
+  position: relative;
+  padding: 10px;
+  width: 100%;
+  height: 50px;
+}
+.loginPage .boxHeaderImg {
+  width: 200px;
+  height: 200px;
+  top: -50px;
+  left: 50px;
+  position: absolute;
+  background: url(../../../assets/loginTit.png);
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+}

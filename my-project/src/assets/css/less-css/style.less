@@ -154,6 +154,11 @@
 	color:@c;
 }
 
+
+
+//项目自定义组件
+
+//过度东湖
 .ww-transition(@t:all,@f:ease,@s:.3s){
 	    -webkit-transition: @arguments;
 	    -moz-transition: @arguments;
@@ -161,7 +166,25 @@
 	    -ms-transition: @arguments;
 	    transition: @arguments;
 }
-//
+//桌面背景样式
+.bgstyle(@img:'http://demo.kalcaddle.com/static/images/wall_page/7.jpg'){
+		.ww-height();
+		left: 0;
+		right: 0;
+		top:0;
+		bottom: 0;
+		position: absolute;
+		background-image:url(@img);
+		background-attachment: fixed;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    -webkit-background-size: cover;
+	    background-size: cover;
+	    -ms-background-size: cover;
+	    background-size: 100% 100%;
+	    .ww-transition();
+}
+//btn样式
 .btndefull(@c1:#eeeeee,@c2:#bbbbbb){
 	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=@c1, endColorstr=@c2);
       .ww-backgroud-colorHEX(@c2);
@@ -203,21 +226,7 @@
 	    justify-content: flex-start;
 	}
 	.desktopCenter_background{
-		height:100%;
-		left: 0;
-		right: 0;
-		top:0;
-		bottom: 0;
-		position: absolute;
-		background-image:url('http://demo.kalcaddle.com/static/images/wall_page/7.jpg');
-		background-attachment: fixed;
-	    -moz-background-size: cover;
-	    -o-background-size: cover;
-	    -webkit-background-size: cover;
-	    background-size: cover;
-	    -ms-background-size: cover;
-	    background-size: 100% 100%;
-	    .ww-transition();
+		.bgstyle();
 	}
 	.flex_iconApp{
 		width:90px;
@@ -515,3 +524,41 @@
 /* 滚动条滑块 */::-webkit-scrollbar-thumb {    border-radius: 10px;    background: rgba(0,0,0,0.1);
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);}
  /* ::-webkit-scrollbar-thumb:window-inactive {    background: rgba(255,0,0,0.4);}*/
+
+
+ //login.vue
+
+.loginPage{
+	.desktopCenter_background{
+		.bgstyle();
+	}
+	.loginBox{
+		max-width: 500px;
+	    width: 100%;
+	    border-radius: 2px;
+	    .ww-backgroud-colorHEX-RGBA(#bebebe,50%);
+	    position: absolute;
+	    z-index: 10;
+	    .ww-top(10%);
+	    .ww-left(30%);
+	    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	}
+	.boxHeader{
+		position: relative;
+		padding:10px;
+		.ww-width();
+		.ww-height(50px);
+	}
+	.boxHeaderImg{
+		.ww-width(200px);
+		.ww-height(200px);
+		.ww-top(-50px);
+		.ww-left(50px);
+		position: absolute;
+		background: url(../../../assets/loginTit.png);
+		background-size:200px;
+		background-repeat: no-repeat;
+		background-position:center;
+	}
+}
+  //login.vue
