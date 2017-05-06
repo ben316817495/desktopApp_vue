@@ -4,6 +4,8 @@
 		<div class="loginBox">
 			<div class="boxHeader">
 					<div class="boxHeaderImg"></div>
+					<div class="boxHeaderTit">MacOSX</div>
+					<p class="boxHeaderText">欢迎登陆MacOSX账户</p>
 			</div>
 			<div class="boxBody">
 				<el-form ref="form" :model="form" label-width="80px">
@@ -21,14 +23,15 @@
 									 </el-checkbox-group>
 								</el-col>
 								<el-col :span="12">
-									
+
 								</el-col>
 							</el-row>
 						</el-form-item>
-						<el-form-item>
-						    <el-button type="primary" @click="onSubmit">立即登陆</el-button>
-						    <el-button>忘记密码</el-button>
-						</el-form-item>
+						<el-row>
+							<el-col :span="24">
+								<el-button class="longBtn" type="primary" @click="onSubmit">立即登陆</el-button>
+							</el-col>
+						</el-row>
 				</el-form>
 			</div>
 		</div>
