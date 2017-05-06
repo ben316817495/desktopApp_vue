@@ -24,7 +24,7 @@
 									 </el-checkbox-group>
 								</el-col>
 								<el-col :span="12">
-
+									<p class="forGetPwd">忘记密码？</p>
 								</el-col>
 							</el-row>
 						</el-form-item>
