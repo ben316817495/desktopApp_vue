@@ -1,6 +1,7 @@
 <template>
 	<div class="loginPage">
 		<div class="desktopCenter_background"></div>
+		<div class="maskOfLogin"></div>
 		<div class="loginBox">
 			<div class="boxHeader">
 					<div class="boxHeaderImg"></div>

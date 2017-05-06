@@ -532,7 +532,7 @@
 .loginPage{
 	.desktopCenter_background{
 		.bgstyle();
-		opacity: 0.7;
+		//opacity: 0.7;
 		background-color:#ccc; 
 	}
 	.loginBox{
@@ -542,9 +542,19 @@
 	    .ww-backgroud-colorHEX-RGBA(#bebebe,50%);
 	    position: absolute;
 	    z-index: 10;
-	    .ww-top(16%);
-	    .ww-left(32%);
+	    .ww-top(18%);
+	    .ww-left(34%);
 	    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	}
+	.maskOfLogin{
+		.ww-height();
+		left: 0;
+		right: 0;
+		top:0;
+		bottom: 0;
+		position: absolute;
+		.ww-backgroud-colorHEX-RGBA(#4a4a4a,70%);
+		.ww-transition();
 	}
 	.boxHeader{
 		position: relative;
@@ -564,8 +574,8 @@
 	.boxHeaderImg{
 		.ww-width(180px);
 		.ww-height(180px);
-		.ww-top(-50px);
-		.ww-left(10px);
+		.ww-top(-59px);
+		.ww-left(-3px);
 		position: absolute;
 		background: url(../../../assets/loginTit.png);
 		background-size:180px;
@@ -578,11 +588,11 @@
 
 		.el-input__inner{
 			.ww-backgroud-colorHEX-RGBA();
-			border: 1px solid #a9a29d;
+			border:1px solid #828588;
 		}
 		.el-checkbox__inner{
 			.ww-backgroud-colorHEX-RGBA();
-			border: 1px solid #a9a29d;
+			border:1px solid #828588;
 		}
 		.longBtn{
 			.ww-width();
