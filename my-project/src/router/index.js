@@ -4,7 +4,7 @@ import Router from 'vue-router'
 
 
 import Hello from '@/components/Hello'
-
+import lockPage from '@/components/lockPage'
 import login from '@/components/login'
 import indexdesktop from '@/components/indexdesktop'
 import folderPanel from '@/components/folderPanel'
@@ -29,6 +29,10 @@ export default new Router({
       path:'/login',
       name:'login',
       component:login
+    },{
+      path:'/lockPage',
+      name:'lockPage',
+      component:lockPage
     }
   ]
 })

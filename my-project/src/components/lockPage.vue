@@ -1,5 +1,5 @@
 <template>
-	<div class="loginPage">
+	<div class="lockPage">
 		<div class="desktopCenter_background"></div>
 		<div class="maskOfLogin"></div>
 		<div class="loginBox">
@@ -41,7 +41,7 @@
 
 <script>
 	export default {
-	  name: 'loginPage',
+	  name: 'lockPage',
 	  components: {},
 	  data() {
       	return {

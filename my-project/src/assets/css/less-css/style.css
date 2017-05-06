@@ -382,7 +382,8 @@ body {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 /* ::-webkit-scrollbar-thumb:window-inactive {    background: rgba(255,0,0,0.4);}*/
-.loginPage .desktopCenter_background {
+.loginPage .desktopCenter_background,
+.lockPage .desktopCenter_background {
   height: 100%;
   left: 0;
   right: 0;
@@ -404,10 +405,13 @@ body {
   transition: all ease 0.3s;
   background-color: #ccc;
 }
-.loginPage .loginBox {
+.loginPage .loginBox,
+.lockPage .loginBox {
   max-width: 450px;
   width: 100%;
-  border-radius: 2px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
   background-color: rgba(190, 190, 190, 0.5);
   position: absolute;
   z-index: 10;
@@ -415,7 +419,8 @@ body {
   left: 34%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-.loginPage .maskOfLogin {
+.loginPage .maskOfLogin,
+.lockPage .maskOfLogin {
   height: 100%;
   left: 0;
   right: 0;
@@ -429,22 +434,26 @@ body {
   -ms-transition: all ease 0.3s;
   transition: all ease 0.3s;
 }
-.loginPage .boxHeader {
+.loginPage .boxHeader,
+.lockPage .boxHeader {
   position: relative;
   padding: 10px;
   width: 100%;
   height: 100px;
 }
-.loginPage .boxHeaderTit {
+.loginPage .boxHeaderTit,
+.lockPage .boxHeaderTit {
   font-family: "Helvetica Neue";
   font-size: 49px;
   padding-left: 180px;
 }
-.loginPage .boxHeaderText {
+.loginPage .boxHeaderText,
+.lockPage .boxHeaderText {
   padding-left: 180px;
   font-size: 10px;
 }
-.loginPage .boxHeaderImg {
+.loginPage .boxHeaderImg,
+.lockPage .boxHeaderImg {
   width: 180px;
   height: 180px;
   top: -59px;
@@ -455,19 +464,23 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-.loginPage .boxBody {
+.loginPage .boxBody,
+.lockPage .boxBody {
   margin-top: 25px;
   padding: 10px 20px;
 }
-.loginPage .boxBody .el-input__inner {
+.loginPage .boxBody .el-input__inner,
+.lockPage .boxBody .el-input__inner {
   background-color: rgba(190, 190, 190, 0.3);
   border: 1px solid #828588;
 }
-.loginPage .boxBody .el-checkbox__inner {
+.loginPage .boxBody .el-checkbox__inner,
+.lockPage .boxBody .el-checkbox__inner {
   background-color: rgba(190, 190, 190, 0.3);
   border: 1px solid #828588;
 }
-.loginPage .boxBody .longBtn {
+.loginPage .boxBody .longBtn,
+.lockPage .boxBody .longBtn {
   width: 100%;
   margin-bottom: 20px;
 }
