@@ -147,7 +147,7 @@ body {
   background-color: rgba(214, 215, 216, 0.3);
 }
 .folderPopup {
-  top: 75px;
+  top: 8px;
   width: 75%;
   bottom: 35px;
   -webkit-border-radius: 10px;
