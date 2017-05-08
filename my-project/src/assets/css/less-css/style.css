@@ -53,7 +53,7 @@ body {
   right: 0;
   top: 0;
   bottom: 0;
-  padding: 60px 30px 32px;
+  padding: 0 30px 32px;
   display: flex;
   display: -webkit-flex;
   /* Safari */
@@ -274,6 +274,10 @@ body {
   background-size: 40px;
   background-repeat: no-repeat;
   background-position: center;
+  /*&::hover&::after{
+				background: #20a0ff;
+			    border-top: 1px solid rgba(0,0,0,0.15);
+			}*/
 }
 .bottomNav .startBtn::after {
   content: '';
@@ -284,6 +288,10 @@ body {
   position: absolute;
   border-radius: 50%;
   z-index: -1;
+}
+.startBtn:hover.startBtn::after {
+  background-color: rgba(11, 80, 132, 0.4);
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
 .startband {
   border-top-right-radius: 10px;

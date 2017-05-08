@@ -217,7 +217,7 @@
 		right: 0;
 		top:0;
 		bottom:0;
-		padding:60px 30px 32px;
+		padding:0 30px 32px;
 		display: flex;
 		display: -webkit-flex; /* Safari */
 		flex-wrap:wrap;
@@ -409,6 +409,10 @@
 			background-size:40px;
 			background-repeat: no-repeat;
 			background-position:center;
+			/*&::hover&::after{
+				background: #20a0ff;
+			    border-top: 1px solid rgba(0,0,0,0.15);
+			}*/
 			&::after{
 				content: '';
 				width:50px;
@@ -418,12 +422,20 @@
 			    position: absolute;
 			    border-radius: 50%;
 			    z-index: -1;
+
 			}
+			
 			
 		}
 	}
-
+.startBtn{
+	&:hover&::after{
+		.ww-backgroud-colorHEX-RGBA(#0b5084,40%);
+			    border-top: 1px solid rgba(0,0,0,0.15);
+	}
+}
  //bottomNav.vue
+
 
 //startband.vue
  .startband{
