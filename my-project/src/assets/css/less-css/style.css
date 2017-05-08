@@ -146,7 +146,12 @@ body {
 .topheader .el-menu--horizontal .el-submenu__title:hover {
   background-color: rgba(214, 215, 216, 0.3);
 }
-.folderPopup {
+.folderPopup .folderPopup_contBg {
+  height: 95%;
+  padding-bottom: 20px;
+}
+.folderPopup,
+.cmdApplication {
   top: 8px;
   width: 75%;
   bottom: 35px;
@@ -159,19 +164,18 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
 }
-.folderPopup .titleText {
+.folderPopup .titleText,
+.cmdApplication .titleText {
   position: relative;
   padding: 10px 10px;
   background-color: rgba(190, 190, 190, 0.7);
 }
-.folderPopup .folderPopup_contBg {
-  height: 95%;
-  padding-bottom: 20px;
-}
-.folderPopup .contBgLeft_h {
+.folderPopup .contBgLeft_h,
+.cmdApplication .contBgLeft_h {
   height: 95%;
 }
-.folderPopup .controlBtn {
+.folderPopup .controlBtn,
+.cmdApplication .controlBtn {
   margin-left: 5px;
   float: left;
   display: block;
@@ -198,7 +202,9 @@ body {
   -pie-background: linear-gradient(to top, #eeeeee, #bbbbbb);
 }
 .folderPopup .redCloseBtn:hover,
-.folderPopup .redCloseBtn:active {
+.cmdApplication .redCloseBtn:hover,
+.folderPopup .redCloseBtn:active,
+.cmdApplication .redCloseBtn:active {
   color: #ffffff;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f7d8d8, endColorstr=#de2f0a);
   background-color: #de2f0a;
@@ -210,7 +216,9 @@ body {
   -pie-background: linear-gradient(to top, #f7d8d8, #de2f0a);
 }
 .folderPopup .yellowBtn:hover,
-.folderPopup .yellowBtn:active {
+.cmdApplication .yellowBtn:hover,
+.folderPopup .yellowBtn:active,
+.cmdApplication .yellowBtn:active {
   color: #ffffff;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#fdd774, endColorstr=#eab11e);
   background-color: #eab11e;
@@ -221,12 +229,14 @@ body {
   background-image: linear-gradient(top, #fdd774, #eab11e);
   -pie-background: linear-gradient(to top, #fdd774, #eab11e);
 }
-.folderPopup .btnGroup {
+.folderPopup .btnGroup,
+.cmdApplication .btnGroup {
   position: absolute;
   top: 5px;
   right: 5px;
 }
-.folderPopup .folderPopup_cont {
+.folderPopup .folderPopup_cont,
+.cmdApplication .folderPopup_cont {
   position: relative;
   height: 100%;
 }
@@ -514,4 +524,22 @@ body {
 .lockPage .boxBody .longBtn {
   width: 100%;
   margin-bottom: 20px;
+}
+.cmdApplication {
+  top: 8px;
+  width: 75%;
+  bottom: 35px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: absolute;
+  border: 3px solid rgba(190, 190, 190, 0.7);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+.cmdApplication .titleText {
+  position: relative;
+  padding: 10px 10px;
+  background-color: rgba(190, 190, 190, 0.7);
 }

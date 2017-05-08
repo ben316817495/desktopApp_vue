@@ -297,8 +297,19 @@
 }
 
 //folderPopup.vue
- .folderPopup{
- 		.ww-top(8px);
+.folderPopup{
+ 		
+     .folderPopup_contBg{
+	    	.ww-height(95%);
+    		padding-bottom: 20px;
+	    } 	
+      
+
+    }//folderPopup.vue
+
+//.folderPopup,.cmdApplication
+.folderPopup,.cmdApplication{
+.ww-top(8px);
  		.ww-width(75%);
  		.ww-bottom(35px);
  		.ww-border-radius(all,10px);
@@ -307,16 +318,12 @@
       	border:3px solid rgba(190,190,190,0.7);
       	box-shadow: 0 0 10px rgba(0,0,0,0.2);
       	.ww-backgroud-colorHEX(#fff);
-
       	.titleText{
 	      	.ww-rel();
 	      	padding:10px 10px;
 	      	.ww-backgroud-colorRGB(rgba(190,190,190,0.7));
 	    }
-	    .folderPopup_contBg{
-	    	.ww-height(95%);
-    		padding-bottom: 20px;
-	    }
+	    
 	    .contBgLeft_h{
 	    	 .ww-height(95%);
 	    }
@@ -352,7 +359,7 @@
       		}
 
       	}
-      	.btnGroup{
+      		.btnGroup{
 	      .ww-abs();
 	      .ww-top(5px);
 	      .ww-right(5px);
@@ -361,8 +368,8 @@
 	     .ww-rel();
 	     .ww-height();
 	   }
-
-    }//folderPopup.vue
+}
+//.folderPopup,.cmdApplication
 
 
  //bottomNav.vue
@@ -648,3 +655,22 @@
 	}
 }
 //loginPage & lockPage
+
+//cmdApplication.vue
+.cmdApplication{
+	.ww-top(8px);
+ 		.ww-width(75%);
+ 		.ww-bottom(35px);
+ 		.ww-border-radius(all,10px);
+ 		.ww-overflow(h);
+ 		.ww-abs();
+      	border:3px solid rgba(190,190,190,0.7);
+      	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      	.ww-backgroud-colorHEX(#fff);
+      	.titleText{
+	      	.ww-rel();
+	      	padding:10px 10px;
+	      	.ww-backgroud-colorRGB(rgba(190,190,190,0.7));
+	    }
+}
+//cmdApplication.vue
