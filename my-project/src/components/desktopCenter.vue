@@ -23,6 +23,13 @@
 					</div>
 					<div class="iconApp_fontStyle iconApp_fontBg">Music</div>
 				</div>
+
+				<div class="iconApp" @dblclick="">
+					<div class="iconApp_img">
+						<img src="../assets/iconApp/game.png">
+					</div>
+					<div class="iconApp_fontStyle iconApp_fontBg">Game</div>
+				</div>
 				
 				<transition name="slide-fade">
 					<folderPopup v-show="panel.showfolderPopup" v-on:btnListenEvent="btnListenEvent_fn"></folderPopup>
