@@ -137,10 +137,63 @@ body {
   position: fixed;
   top: 0;
 }
-.topheader .el-menu {
-  background-color: #eeeeee;
+.topheader .top-menubg {
+  background-color: none;
   background-color: rgba(190, 190, 190, 0.3);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.topheader .el-menu {
+  background-color: rgba(0, 0, 0, 0);
+}
+.topheader .startBtn .controlBtn {
+  margin-left: 5px;
+  float: left;
+  display: block;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  color: #aaaaaa;
+  border: 1px solid #bbb;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 1.2em;
+  line-height: 20px;
+  text-align: center;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#eeeeee, endColorstr=#bbbbbb);
+  background-color: #bbbbbb;
+  background-image: -webkit-linear-gradient(top, #eeeeee, #bbbbbb);
+  background-image: -moz-linear-gradient(top, #eeeeee, #bbbbbb);
+  background-image: -o-linear-gradient(top, #eeeeee, #bbbbbb);
+  background-image: -ms-linear-gradient(top, #eeeeee, #bbbbbb);
+  background-image: linear-gradient(top, #eeeeee, #bbbbbb);
+  -pie-background: linear-gradient(to top, #eeeeee, #bbbbbb);
+}
+.topheader .redCloseBtn:hover,
+.topheader .redCloseBtn:active {
+  color: #ffffff;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f7d8d8, endColorstr=#de2f0a);
+  background-color: #de2f0a;
+  background-image: -webkit-linear-gradient(top, #f7d8d8, #de2f0a);
+  background-image: -moz-linear-gradient(top, #f7d8d8, #de2f0a);
+  background-image: -o-linear-gradient(top, #f7d8d8, #de2f0a);
+  background-image: -ms-linear-gradient(top, #f7d8d8, #de2f0a);
+  background-image: linear-gradient(top, #f7d8d8, #de2f0a);
+  -pie-background: linear-gradient(to top, #f7d8d8, #de2f0a);
+}
+.topheader .yellowBtn:hover,
+.topheader .yellowBtn:active {
+  color: #ffffff;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#fdd774, endColorstr=#eab11e);
+  background-color: #eab11e;
+  background-image: -webkit-linear-gradient(top, #fdd774, #eab11e);
+  background-image: -moz-linear-gradient(top, #fdd774, #eab11e);
+  background-image: -o-linear-gradient(top, #fdd774, #eab11e);
+  background-image: -ms-linear-gradient(top, #fdd774, #eab11e);
+  background-image: linear-gradient(top, #fdd774, #eab11e);
+  -pie-background: linear-gradient(to top, #fdd774, #eab11e);
 }
 .topheader .el-menu--horizontal .el-menu-item:hover,
 .topheader .el-menu--horizontal .el-submenu__title:hover {

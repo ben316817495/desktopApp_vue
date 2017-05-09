@@ -1,7 +1,20 @@
 <template>
 	<div class="topheader">
-		<el-row>
-		  <el-col :span="24">
+		<el-row class="top-menubg">
+		  <el-col :span="6">
+		  		<div class="startBtn">
+		  			<div class="btnGroup">
+		                   <a class="controlBtn yellowBtn" @click="">
+		                      <i class="icon-minus"></i>
+		                  </a>
+		                  <a class="controlBtn redCloseBtn" @click="iconCloseBtn">
+		                      <i class="icon-close"></i>
+		                  </a>
+		            </div>
+	
+		  		</div>
+		  </el-col>
+		  <el-col :span="18">
 		  		<el-menu :default-active="activeIndex2" class="el-menu-demo" mode="horizontal" @select="handleSelect">
 					  <el-menu-item index="1">处理中心</el-menu-item>
 					  <el-submenu index="2">

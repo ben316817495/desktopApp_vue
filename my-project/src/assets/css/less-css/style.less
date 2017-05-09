@@ -285,11 +285,51 @@
 	.ww-width();
 	.ww-fix();
 	.ww-top();
-	.el-menu{
-		.ww-backgroud-colorHEX();
+	.top-menubg{
+		.ww-backgroud-colorHEX(none);
 		.ww-backgroud-colorHEX-RGBA();
 		box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
 	}
+	.el-menu{
+		//.ww-backgroud-colorHEX(none);
+		.ww-backgroud-colorHEX-RGBA(#000,0%);
+		//box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	}
+	.startBtn{
+		.controlBtn{
+      		  margin-left:5px;
+		      .ww-fl(l);
+		      display: block;
+		      text-decoration: none;
+		      outline: none;
+		      cursor: pointer;
+		      .ww-color(#aaa);  
+		      border: 1px solid #bbb;
+		      .ww-border-radius(all,10px);
+		      .ww-width(20px);
+		      .ww-height(20px);
+		      font-size: 1.2em;
+		      line-height: 20px;
+		      text-align: center;
+      		.btndefull();
+      	}
+	}
+	.redCloseBtn{
+      		&:hover,&:active{
+      			.ww-color();
+      			.ww-backgroud-colorHEX(#de2f0a);
+      			.btndefull(#f7d8d8,#de2f0a);
+      		}
+      	}
+      	.yellowBtn{
+      		&:hover,&:active{
+      			.ww-color();
+      			.ww-backgroud-colorHEX(#EAB11E);
+      			.btndefull(#fdd774,#EAB11E);
+      		}
+
+      	}
 	.el-menu--horizontal .el-menu-item:hover,
 	.el-menu--horizontal .el-submenu__title:hover {
 	    .ww-backgroud-colorRGB(rgba(214, 215, 216, 0.3));
