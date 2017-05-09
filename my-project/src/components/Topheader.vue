@@ -1,20 +1,20 @@
 <template>
 	<div class="topheader">
 		<el-row class="top-menubg">
-		  <el-col :span="6">
+		  <el-col :span="4" class="startBtnCOL">
 		  		<div class="startBtn">
 		  			<div class="btnGroup">
-		                   <a class="controlBtn yellowBtn" @click="">
-		                      <i class="icon-minus"></i>
+		                  <a class="controlBtn blueBackBtn" @click="">
+		                      <i class="icon-action-undo"></i>
 		                  </a>
-		                  <a class="controlBtn redCloseBtn" @click="iconCloseBtn">
-		                      <i class="icon-close"></i>
+		                  <a class="controlBtn blueBackBtn" @click="">
+		                      <i class="icon-action-redo"></i>
 		                  </a>
 		            </div>
 	
 		  		</div>
 		  </el-col>
-		  <el-col :span="18">
+		  <el-col :span="14">
 		  		<el-menu :default-active="activeIndex2" class="el-menu-demo" mode="horizontal" @select="handleSelect">
 					  <el-menu-item index="1">处理中心</el-menu-item>
 					  <el-submenu index="2">
@@ -26,6 +26,14 @@
 					  <el-menu-item index="3"><a>订单管理</a></el-menu-item>
 				</el-menu>
 		  </el-col>
+		  <el-col :span="6" class="topInputSeach">
+		  		<el-input
+				placeholder="搜索"
+				icon="search"
+				v-model="input2"
+				:on-icon-click="handleIconClick">
+				</el-input>
+		  </el-col>
 		</el-row>
 	</div>
 </template>
@@ -33,13 +41,17 @@
  export default {
     data() {
       return {
-        activeIndex2: '3'
+        activeIndex2: '3',
+        input2: ''
       };
     },
     methods: {
       handleSelect(key, keyPath) {
         console.log(key, keyPath);
-      }
-    }
+      },
+      handleIconClick(ev) {
+	      console.log(ev);
+	    }
+    }//methods
   }
 </script>

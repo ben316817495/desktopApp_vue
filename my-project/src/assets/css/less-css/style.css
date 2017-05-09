@@ -152,48 +152,51 @@ body {
   text-decoration: none;
   outline: none;
   cursor: pointer;
-  color: #aaaaaa;
-  border: 1px solid #bbb;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  width: 20px;
-  height: 20px;
+  color: #d0d0d0;
+  border: 1px solid #D0D0D0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   font-size: 1.2em;
-  line-height: 20px;
+  line-height: 40px;
   text-align: center;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#eeeeee, endColorstr=#bbbbbb);
-  background-color: #bbbbbb;
-  background-image: -webkit-linear-gradient(top, #eeeeee, #bbbbbb);
-  background-image: -moz-linear-gradient(top, #eeeeee, #bbbbbb);
-  background-image: -o-linear-gradient(top, #eeeeee, #bbbbbb);
-  background-image: -ms-linear-gradient(top, #eeeeee, #bbbbbb);
-  background-image: linear-gradient(top, #eeeeee, #bbbbbb);
-  -pie-background: linear-gradient(to top, #eeeeee, #bbbbbb);
 }
-.topheader .redCloseBtn:hover,
-.topheader .redCloseBtn:active {
+.topheader .btnGroup {
+  height: 60px;
+  padding: 10px  0 0 10px;
+}
+.topheader .startBtnCOL {
+  width: 120px;
+}
+.topheader .topInputSeach {
+  float: right;
+  padding: 10px  20px 0 10px;
+}
+.topheader .blueBackBtn:hover,
+.topheader .blueBackBtn:active {
   color: #ffffff;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f7d8d8, endColorstr=#de2f0a);
-  background-color: #de2f0a;
-  background-image: -webkit-linear-gradient(top, #f7d8d8, #de2f0a);
-  background-image: -moz-linear-gradient(top, #f7d8d8, #de2f0a);
-  background-image: -o-linear-gradient(top, #f7d8d8, #de2f0a);
-  background-image: -ms-linear-gradient(top, #f7d8d8, #de2f0a);
-  background-image: linear-gradient(top, #f7d8d8, #de2f0a);
-  -pie-background: linear-gradient(to top, #f7d8d8, #de2f0a);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#c6e3ff, endColorstr=#20a0ff);
+  background-color: #20a0ff;
+  background-image: -webkit-linear-gradient(top, #c6e3ff, #20a0ff);
+  background-image: -moz-linear-gradient(top, #c6e3ff, #20a0ff);
+  background-image: -o-linear-gradient(top, #c6e3ff, #20a0ff);
+  background-image: -ms-linear-gradient(top, #c6e3ff, #20a0ff);
+  background-image: linear-gradient(top, #c6e3ff, #20a0ff);
+  -pie-background: linear-gradient(to top, #c6e3ff, #20a0ff);
 }
 .topheader .yellowBtn:hover,
 .topheader .yellowBtn:active {
   color: #ffffff;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#fdd774, endColorstr=#eab11e);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#fbf0d5, endColorstr=#eab11e);
   background-color: #eab11e;
-  background-image: -webkit-linear-gradient(top, #fdd774, #eab11e);
-  background-image: -moz-linear-gradient(top, #fdd774, #eab11e);
-  background-image: -o-linear-gradient(top, #fdd774, #eab11e);
-  background-image: -ms-linear-gradient(top, #fdd774, #eab11e);
-  background-image: linear-gradient(top, #fdd774, #eab11e);
-  -pie-background: linear-gradient(to top, #fdd774, #eab11e);
+  background-image: -webkit-linear-gradient(top, #fbf0d5, #eab11e);
+  background-image: -moz-linear-gradient(top, #fbf0d5, #eab11e);
+  background-image: -o-linear-gradient(top, #fbf0d5, #eab11e);
+  background-image: -ms-linear-gradient(top, #fbf0d5, #eab11e);
+  background-image: linear-gradient(top, #fbf0d5, #eab11e);
+  -pie-background: linear-gradient(to top, #fbf0d5, #eab11e);
 }
 .topheader .el-menu--horizontal .el-menu-item:hover,
 .topheader .el-menu--horizontal .el-submenu__title:hover {
@@ -204,7 +207,8 @@ body {
   padding-bottom: 20px;
 }
 .folderPopup,
-.cmdApplication {
+.cmdApplication,
+.musicPanel {
   top: 8px;
   width: 75%;
   bottom: 35px;
@@ -218,17 +222,20 @@ body {
   background-color: #ffffff;
 }
 .folderPopup .titleText,
-.cmdApplication .titleText {
+.cmdApplication .titleText,
+.musicPanel .titleText {
   position: relative;
   padding: 10px 10px;
   background-color: rgba(190, 190, 190, 0.7);
 }
 .folderPopup .contBgLeft_h,
-.cmdApplication .contBgLeft_h {
+.cmdApplication .contBgLeft_h,
+.musicPanel .contBgLeft_h {
   height: 95%;
 }
 .folderPopup .controlBtn,
-.cmdApplication .controlBtn {
+.cmdApplication .controlBtn,
+.musicPanel .controlBtn {
   margin-left: 5px;
   float: left;
   display: block;
@@ -256,8 +263,10 @@ body {
 }
 .folderPopup .redCloseBtn:hover,
 .cmdApplication .redCloseBtn:hover,
+.musicPanel .redCloseBtn:hover,
 .folderPopup .redCloseBtn:active,
-.cmdApplication .redCloseBtn:active {
+.cmdApplication .redCloseBtn:active,
+.musicPanel .redCloseBtn:active {
   color: #ffffff;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f7d8d8, endColorstr=#de2f0a);
   background-color: #de2f0a;
@@ -270,8 +279,10 @@ body {
 }
 .folderPopup .yellowBtn:hover,
 .cmdApplication .yellowBtn:hover,
+.musicPanel .yellowBtn:hover,
 .folderPopup .yellowBtn:active,
-.cmdApplication .yellowBtn:active {
+.cmdApplication .yellowBtn:active,
+.musicPanel .yellowBtn:active {
   color: #ffffff;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#fdd774, endColorstr=#eab11e);
   background-color: #eab11e;
@@ -283,13 +294,15 @@ body {
   -pie-background: linear-gradient(to top, #fdd774, #eab11e);
 }
 .folderPopup .btnGroup,
-.cmdApplication .btnGroup {
+.cmdApplication .btnGroup,
+.musicPanel .btnGroup {
   position: absolute;
   top: 5px;
   right: 5px;
 }
 .folderPopup .folderPopup_cont,
-.cmdApplication .folderPopup_cont {
+.cmdApplication .folderPopup_cont,
+.musicPanel .folderPopup_cont {
   position: relative;
   height: 100%;
 }

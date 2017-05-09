@@ -304,29 +304,40 @@
 		      text-decoration: none;
 		      outline: none;
 		      cursor: pointer;
-		      .ww-color(#aaa);  
-		      border: 1px solid #bbb;
-		      .ww-border-radius(all,10px);
-		      .ww-width(20px);
-		      .ww-height(20px);
+		      .ww-color(#D0D0D0);  
+		      border: 1px solid #D0D0D0;
+		      .ww-border-radius(all,50%);
+		      .ww-width(40px);
+		      .ww-height(40px);
 		      font-size: 1.2em;
-		      line-height: 20px;
+		      line-height: 40px;
 		      text-align: center;
-      		.btndefull();
+      		//.btndefull();
       	}
 	}
-	.redCloseBtn{
+	.btnGroup{
+		height: 60px;
+		padding:10px  0 0 10px;
+	}
+	.startBtnCOL{
+		.ww-width(120px);
+	}
+	.topInputSeach{
+		float:right;
+		padding:10px  20px 0 10px;
+	}
+	.blueBackBtn{
       		&:hover,&:active{
       			.ww-color();
-      			.ww-backgroud-colorHEX(#de2f0a);
-      			.btndefull(#f7d8d8,#de2f0a);
+      			.ww-backgroud-colorHEX(#20A0FF);
+      			.btndefull(#C6E3FF,#20A0FF);
       		}
       	}
       	.yellowBtn{
       		&:hover,&:active{
       			.ww-color();
       			.ww-backgroud-colorHEX(#EAB11E);
-      			.btndefull(#fdd774,#EAB11E);
+      			.btndefull(#FBF0D5,#EAB11E);
       		}
 
       	}
@@ -348,7 +359,7 @@
     }//folderPopup.vue
 
 //.folderPopup,.cmdApplication
-.folderPopup,.cmdApplication{
+.folderPopup,.cmdApplication,.musicPanel{
 .ww-top(8px);
  		.ww-width(75%);
  		.ww-bottom(35px);

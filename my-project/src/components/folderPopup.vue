@@ -8,7 +8,6 @@
         </div>
         <div class="titleText">
             <span><i class="icon-screen-desktop"></i> 我的电脑</span>
-
             <div class="btnGroup">
                    <a class="controlBtn yellowBtn" @click="">
                       <i class="icon-minus"></i>
@@ -17,7 +16,6 @@
                       <i class="icon-close"></i>
                   </a>
             </div>
-
         </div>
     </el-col>
    
