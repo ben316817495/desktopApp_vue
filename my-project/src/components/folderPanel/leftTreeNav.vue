@@ -1,7 +1,7 @@
 <template>
 	<div class="leftTreeNav">
 		<div class="treeExternal">
-			<el-tree class="treeAddStyle" :data="data" :props="defaultProps" @node-click="handleNodeClick"></el-tree>
+			<el-tree class="treeAddStyle" :default-expand-all=true :data="data" :props="defaultProps" @node-click="handleNodeClick"></el-tree>
 		</div>
 	</div>
 </template>

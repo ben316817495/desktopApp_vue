@@ -18,7 +18,6 @@
             </div>
         </div>
     </el-col>
-   
     <el-col :span="24" class="folderPopup_cont">
         <el-col :span="24">
               <topControllerNav></topControllerNav>
