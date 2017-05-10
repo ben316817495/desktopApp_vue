@@ -5,7 +5,8 @@
 		        <div class="">
 		            
 		        </div>
-		        <div class="titleText">
+		        <!-- <div class="titleText"> -->
+		        <div>
 		            <span><i class="icon-music-tone-alt"></i> musicPanel</span>
 
 		            <div class="btnGroup">
