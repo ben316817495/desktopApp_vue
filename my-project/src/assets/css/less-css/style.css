@@ -70,7 +70,7 @@ body {
   top: 0;
   bottom: 0;
   position: absolute;
-  background-image: url('http://demo.kalcaddle.com/static/images/wall_page/7.jpg');
+  background-image: url('../../../assets/wallpage/7.jpg');
   background-attachment: fixed;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -346,7 +346,7 @@ body {
   bottom: 0;
   left: 10px;
   border-radius: 50%;
-  background: url(http://www.sublimetext.com/images/windows_48.png);
+  background: url(../../../assets/windows_48.png);
   background-size: 40px;
   background-repeat: no-repeat;
   background-position: center;
@@ -520,7 +520,7 @@ body {
   top: 0;
   bottom: 0;
   position: absolute;
-  background-image: url('http://demo.kalcaddle.com/static/images/wall_page/7.jpg');
+  background-image: url('../../../assets/wallpage/7.jpg');
   background-attachment: fixed;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -602,10 +602,13 @@ body {
   position: absolute;
   border: 3px solid rgba(190, 190, 190, 0.7);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  background-color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 .cmdApplication .titleText {
   position: relative;
   padding: 10px 10px;
   background-color: rgba(190, 190, 190, 0.7);
+}
+.musicPanel {
+  background-color: rgba(0, 0, 0, 0.5);
 }

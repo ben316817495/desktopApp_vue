@@ -19,14 +19,19 @@
 
 		        </div>
 		    </el-col>
+
+		     <el-col :span="24" class="folderPopup_cont">
+		      		<musicMain></musicMain>
+		     </el-col>
 			
 		</el-row>
 	</div>
 </template>
 
 <script>
+import musicMain from '@/components/musicPanel/musicMain'
 export default {
-  components: {},
+  components: {musicMain},
   data () {
     return {
 

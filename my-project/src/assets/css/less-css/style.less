@@ -168,7 +168,7 @@
 	    transition: @arguments;
 }
 //桌面背景样式
-.bgstyle(@img:'http://demo.kalcaddle.com/static/images/wall_page/7.jpg'){
+.bgstyle(@img:'../../../assets/wallpage/7.jpg'){
 		.ww-height();
 		left: 0;
 		right: 0;
@@ -463,7 +463,7 @@
 			bottom:0;
 			left:10px;
 			border-radius: 50%;
-			background: url(http://www.sublimetext.com/images/windows_48.png);
+			background: url(../../../assets/windows_48.png);
 			background-size:40px;
 			background-repeat: no-repeat;
 			background-position:center;
@@ -717,7 +717,7 @@
  		.ww-abs();
       	border:3px solid rgba(190,190,190,0.7);
       	box-shadow: 0 0 10px rgba(0,0,0,0.2);
-      	.ww-backgroud-colorHEX(#fff);
+      	.ww-backgroud-colorHEX-RGBA(#000,90%);
       	.titleText{
 	      	.ww-rel();
 	      	padding:10px 10px;
@@ -725,3 +725,13 @@
 	    }
 }
 //cmdApplication.vue
+
+
+//musicPanel.vue
+.musicPanel{
+	.ww-backgroud-colorHEX-RGBA(#000,50%);
+	.folderPopup_cont{
+
+	}	
+}
+//musicPanel.vue
