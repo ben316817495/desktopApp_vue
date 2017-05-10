@@ -21,7 +21,11 @@
 		        </div>
 		    </el-col>
 
-		     <el-col :span="24" class="folderPopup_cont">
+		     <el-col :span="6" class="heightFull">
+		     		<leftTreeNav></leftTreeNav>
+		     </el-col>
+
+		     <el-col :span="18" class="folderPopup_cont">
 		      		<musicMain></musicMain>
 		     </el-col>
 			
@@ -31,8 +35,9 @@
 
 <script>
 import musicMain from '@/components/musicPanel/musicMain'
+import leftTreeNav from '@/components/folderPanel/leftTreeNav'
 export default {
-  components: {musicMain},
+  components: {musicMain,leftTreeNav},
   data () {
     return {
 

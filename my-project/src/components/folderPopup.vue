@@ -19,7 +19,7 @@
         </div>
     </el-col>
     <el-col :span="24" class="folderPopup_cont">
-        <el-col :span="24">
+        <el-col :span="24" class="">
               <topControllerNav></topControllerNav>
           </el-col>
           

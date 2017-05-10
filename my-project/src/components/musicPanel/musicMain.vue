@@ -3,3 +3,7 @@
 		musicMain
 	</div>
 </template>
+
+<script>
+	
+</script>
