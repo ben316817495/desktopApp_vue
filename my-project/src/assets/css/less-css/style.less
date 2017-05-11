@@ -745,7 +745,7 @@
 	.folderPopup_cont{
 		.ww-height(94%);
 		overflow-y: auto;
-		padding:10px;
+		padding:0 10px 10px;
 	}
 	.Leftlogo{
 		color:#fff;
@@ -769,7 +769,35 @@
 	.el-menu-item, .el-submenu__title{
 		color:rgba(190,190,190,0.7);
 	}
+	.el-menu--horizontal .el-submenu>.el-menu{
+		.ww-backgroud-colorHEX-RGBA(#000,10%);
+		     border: none;
+	}
+	.el-menu--horizontal .el-submenu .el-menu-item{
+		.ww-backgroud-colorHEX-RGBA(#000,0%);
+	}
+	.musicPanel .el-menu--horizontal .el-menu-item, .musicPanel .el-menu--horizontal .el-submenu__title{
+		&:hover{
+		.ww-backgroud-colorHEX-RGBA(#000,20%);
 
+		}
+	}
+	.msM_navTop{
+		/*padding-bottom: 10px;*/
+		border-bottom:1px solid rgba(190, 190, 190, 0.1) ;
+	}
+
+	.el-menu--horizontal>.el-menu-item:hover,
+	.el-menu--horizontal>.el-submenu.is-active .el-submenu__title, 
+	.el-menu--horizontal>.el-submenu:hover .el-submenu__title{
+		    border-bottom: 5px solid #e4371c;
+	}
+	.el-menu--horizontal.el-menu--dark .el-submenu .el-menu-item.is-active, .el-menu-item.is-active{
+		color: #e4371c;
+	}
+	.el-menu--horizontal .el-submenu .el-submenu__icon-arrow{
+		color: #e4371c;
+	}
 	.el-tree{
 		.ww-backgroud-colorHEX-RGBA(#000,0%);
 		//border: 1px solid #424345;	

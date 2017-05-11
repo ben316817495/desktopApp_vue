@@ -627,7 +627,7 @@ body {
 .musicPanel .folderPopup_cont {
   height: 94%;
   overflow-y: auto;
-  padding: 10px;
+  padding: 0 10px 10px;
 }
 .musicPanel .Leftlogo {
   color: #fff;
@@ -645,6 +645,33 @@ body {
 .musicPanel .el-menu-item,
 .musicPanel .el-submenu__title {
   color: rgba(190, 190, 190, 0.7);
+}
+.musicPanel .el-menu--horizontal .el-submenu > .el-menu {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+}
+.musicPanel .el-menu--horizontal .el-submenu .el-menu-item {
+  background-color: rgba(0, 0, 0, 0);
+}
+.musicPanel .musicPanel .el-menu--horizontal .el-menu-item:hover,
+.musicPanel .musicPanel .el-menu--horizontal .el-submenu__title:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.musicPanel .msM_navTop {
+  /*padding-bottom: 10px;*/
+  border-bottom: 1px solid rgba(190, 190, 190, 0.1);
+}
+.musicPanel .el-menu--horizontal > .el-menu-item:hover,
+.musicPanel .el-menu--horizontal > .el-submenu.is-active .el-submenu__title,
+.musicPanel .el-menu--horizontal > .el-submenu:hover .el-submenu__title {
+  border-bottom: 5px solid #e4371c;
+}
+.musicPanel .el-menu--horizontal.el-menu--dark .el-submenu .el-menu-item.is-active,
+.musicPanel .el-menu-item.is-active {
+  color: #e4371c;
+}
+.musicPanel .el-menu--horizontal .el-submenu .el-submenu__icon-arrow {
+  color: #e4371c;
 }
 .musicPanel .el-tree {
   background-color: rgba(0, 0, 0, 0);
