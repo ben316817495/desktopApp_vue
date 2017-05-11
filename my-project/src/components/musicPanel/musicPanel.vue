@@ -7,16 +7,22 @@
 		        </div>
 		        <!-- <div class="titleText"> -->
 		        <div class="mus_titleStyle">
-		            <span><i class="icon-music-tone-alt"></i> musicPanel</span>
 
-		            <div class="btnGroup">
-		                   <a class="controlBtn yellowBtn" @click="">
-		                      <i class="icon-minus"></i>
-		                  </a>
-		                  <a class="controlBtn redCloseBtn" @click="iconCloseBtn">
-		                      <i class="icon-close"></i>
-		                  </a>
-		            </div>
+		        		<el-row>
+		        			<el-col :span="6" class="Leftlogo">
+					            <i class="icon-music-tone-alt"></i> musicPanel
+					         </el-col>
+					         <el-col :span="18">
+					            <div class="btnGroup">
+					                   <a class="controlBtn yellowBtn" @click="">
+					                      <i class="icon-minus"></i>
+					                  </a>
+					                  <a class="controlBtn redCloseBtn" @click="iconCloseBtn">
+					                      <i class="icon-close"></i>
+					                  </a>
+					            </div>
+					         </el-col>
+					     </el-row>
 
 		        </div>
 		    </el-col>
