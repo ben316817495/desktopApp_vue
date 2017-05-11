@@ -729,15 +729,23 @@
 
 //musicPanel.vue
 .musicPanel{
-	.ww-backgroud-colorHEX-RGBA(#000,50%);
+	border:none;
+	color: rgba(190, 190, 190, 0.7);
+	.ww-backgroud-colorHEX-RGBA(#000,65%);
 	.leftTreeNav{
+		.ww-height(94%);
 		&::before{
 			border-right:none;	
 		}
 	}
+	.mus_titleStyle{
+		.ww-height(50px);
+	}
+
 	.el-tree{
-		.ww-backgroud-colorHEX-RGBA(#000,70%);
-		border: 1px solid #424345;	
+		.ww-backgroud-colorHEX-RGBA(#000,0%);
+		//border: 1px solid #424345;	
+		border: none;
 	}
 	.el-tree-node__content {
 		color:rgba(190,190,190,0.7);

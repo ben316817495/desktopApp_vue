@@ -6,7 +6,7 @@
 		            
 		        </div>
 		        <!-- <div class="titleText"> -->
-		        <div>
+		        <div class="mus_titleStyle">
 		            <span><i class="icon-music-tone-alt"></i> musicPanel</span>
 
 		            <div class="btnGroup">
