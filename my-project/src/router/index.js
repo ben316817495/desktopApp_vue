@@ -3,7 +3,7 @@ import Router from 'vue-router'
 
 
 
-import Hello from '@/components/Hello'
+import musicMainIndex from '@/components/musicPanel/musicMainIndex'
 import lockPage from '@/components/lockPage'
 import login from '@/components/login'
 import indexdesktop from '@/components/indexdesktop'
@@ -19,7 +19,7 @@ export default new Router({
       name: 'indexdesktop',
       component: indexdesktop,
       children: [
-        {path: '/hello',name: 'Hello',component: Hello},
+        {path: '/musicMainIndex',name: 'musicMainIndex',component: musicMainIndex}
       ]
     },{
        path: '/folderPanel',

@@ -83,6 +83,7 @@
 		},//cmdInterface
 		musicPanel(){
 			this.panel.musicPanel = !this.panel.musicPanel;
+			this.$router.push('/musicMainIndex');
 		},//musicPanel
 
 	},
