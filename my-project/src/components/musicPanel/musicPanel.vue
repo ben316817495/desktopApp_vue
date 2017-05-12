@@ -18,7 +18,7 @@
 					                      <i class="icon-minus"></i>
 					                  </a>
 					                  <a class="controlBtn redCloseBtn" @click="iconCloseBtn">
-					                      <i class="icon-close"></i>
+					                      <i class="icon-power"></i>
 					                  </a>
 					            </div>
 					         </el-col>
