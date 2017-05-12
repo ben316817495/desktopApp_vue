@@ -785,6 +785,10 @@
 	.msM_navTop{
 		/*padding-bottom: 10px;*/
 		border-bottom:1px solid rgba(190, 190, 190, 0.1) ;
+		a{ 
+			display: block;
+			text-decoration:none;
+		}
 	}
 
 	.el-menu--horizontal>.el-menu-item:hover,
@@ -818,3 +822,31 @@
 	}	
 }
 //musicPanel.vue
+
+
+//musicPlayPanel.vue
+	.musicPlayPanel{
+		.playAnimation{
+			width: 300px;
+			height: 300px;
+			margin:20px auto;
+			border:1px solid #656564;
+			border-radius: 50%;
+			background-image: url(../../../assets/muc2.png); 
+			background-size: 98%;
+			background-repeat: no-repeat;
+			background-position: 6px 3px;
+		}
+		.playMusicTitle,.musicMess{
+			text-align: center;
+		}
+		.playMusicTitle{
+			font-size: 24px;
+			padding-bottom: 10px;
+			/*border-bottom:1px dashed #656564;*/
+		}
+		.musicMess{
+			margin-top:10px;
+		}
+	}
+//musicPlayPanel.vue
