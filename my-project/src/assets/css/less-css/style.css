@@ -714,3 +714,31 @@ body {
 .musicPlayPanel .musicMess {
   margin-top: 10px;
 }
+.musicPlayPanel .musicControl {
+  margin-top: 20px;
+}
+.musicPlayPanel .timeText-left,
+.musicPlayPanel .timeText-right {
+  height: 36px;
+  line-height: 36px;
+  padding: 0 10px;
+}
+.musicPlayPanel .timeText-left {
+  text-align: right;
+}
+.musicPlayPanel .timeLine {
+  padding: 0 10px;
+}
+.musicPlayPanel .el-slider__bar {
+  background-color: #E4371C;
+}
+.musicPlayPanel .el-slider__button {
+  background-color: #E4371C;
+}
+.musicPlayPanel .el-slider__button.dragging,
+.musicPlayPanel .el-slider__button.hover,
+.musicPlayPanel .el-slider__button:hover {
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  background-color: #E4371C;
+}

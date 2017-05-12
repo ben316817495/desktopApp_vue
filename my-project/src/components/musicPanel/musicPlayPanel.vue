@@ -9,8 +9,17 @@
 			<i class="icon-music-tone-alt"></i> 歌手：bone7
 		</div>
 		<div class="musicControl">
-		<el-row></el-row>
-			<el-slider v-model="value1"></el-slider>
+			<el-row>
+				<el-col :span="3" class="timeText-left">
+					00:00
+				</el-col>
+				<el-col :span="18" class="timeLine">
+					<el-slider v-model="value1"></el-slider>
+				</el-col>
+				<el-col :span="3" class="timeText-right">
+					24:00
+				</el-col>
+			</el-row>
 		</div>
 	</div>
 </template>
