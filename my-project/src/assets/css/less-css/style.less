@@ -853,14 +853,65 @@
 		}
 		.timeText-left,.timeText-right{
 			height:36px;
-			line-height: 36px;
+			line-height: 40px;
 			padding:0 10px;
+			a{
+				width: 100%;
+				height: 100%;
+				display: block;
+				font-size: 20px;
+				&:hover{
+					color:#E4371C;
+					/*.ww-backgroud-colorRGB(rgba(190,190,190,0.2));*/
+				}
+			}
 		}
 		.timeText-left{
 			text-align: right;
 		}
+		.textTimeC{
+			height: 48px;
+			line-height: 48px;
+		}
 		.timeLine{
 			padding:0 10px;
+		}
+		.mus_vcon{
+			display: flex;
+			display: -webkit-flex; /* Safari */
+			line-height: 36px;
+			p{
+				margin-right: 20px;
+				    line-height: 40px;
+			}
+		}
+		.vconStyle{
+			width: 100px;
+		}	
+		.musicControl_btn ul{
+			text-align: center;
+			display: flex;
+			display: -webkit-flex; /* Safari */
+		}
+		.musicControl_btn li{
+			width: 48px;
+			height: 48px;
+			line-height: 48px;
+			text-align: center;
+			font-size: 26px;
+			list-style: none;
+			/*float: left;*/
+			/*border: 1px solid rgba(190, 190, 190, 0.1);
+			border-radius: 50%;*/
+			margin-right: 10px;
+			&:hover{
+				color:#E4371C;
+				/*.ww-backgroud-colorRGB(rgba(190,190,190,0.2));*/
+			}
+		}
+		.el-slider__runway{
+			.ww-backgroud-colorHEX-RGBA(#322A24,30%);
+			border: 1px solid rgba(50, 42, 36, .7);
 		}
 		.el-slider__bar{
 			background-color: #E4371C;
