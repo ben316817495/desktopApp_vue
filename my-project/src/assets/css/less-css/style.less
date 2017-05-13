@@ -198,6 +198,8 @@
 }
 
 
+		
+
 
 
 //执行部分
@@ -826,6 +828,7 @@
 
 //musicPlayPanel.vue
 	.musicPlayPanel{
+		position: relative;
 		.playAnimation{
 			width: 300px;
 			height: 300px;
@@ -836,6 +839,12 @@
 			background-size: 98%;
 			background-repeat: no-repeat;
 			background-position: 6px 3px;
+
+		}
+		.playAnimation.addPlayAnimation{
+			 -moz-animation:rotate 20s infinite linear;
+            -webkit-animation:rotate 20s infinite linear;
+            animation:rotate 20s infinite linear;
 		}
 		.playMusicTitle,.musicMess{
 			text-align: center;
@@ -851,6 +860,26 @@
 		.musicControl{
 			margin-top: 20px;
 		}
+		.likeMusicBtn,.shareMusicBtn,.loopMusicBtn{
+			position: absolute;
+			width: 48px;
+		    height: 48px;
+		    line-height: 48px;
+		    font-size: 26px;
+		    text-align: center;
+		    cursor: pointer;
+		   
+		    &:hover{
+					color:#E4371C;
+					/*.ww-backgroud-colorRGB(rgba(190,190,190,0.2));*/
+				}
+		}
+		.likeMusicBtn{
+			 right:0;
+		}
+		.shareMusicBtn{
+			right:42px;
+		}
 		.timeText-left,.timeText-right{
 			height:36px;
 			line-height: 40px;
@@ -860,6 +889,7 @@
 				height: 100%;
 				display: block;
 				font-size: 20px;
+		    cursor: pointer;
 				&:hover{
 					color:#E4371C;
 					/*.ww-backgroud-colorRGB(rgba(190,190,190,0.2));*/
@@ -889,9 +919,12 @@
 			width: 100px;
 		}	
 		.musicControl_btn ul{
+			width: 250px;
+			margin: 0 auto;
 			text-align: center;
 			display: flex;
 			display: -webkit-flex; /* Safari */
+
 		}
 		.musicControl_btn li{
 			width: 48px;
@@ -900,6 +933,8 @@
 			text-align: center;
 			font-size: 26px;
 			list-style: none;
+		    cursor: pointer;
+
 			/*float: left;*/
 			/*border: 1px solid rgba(190, 190, 190, 0.1);
 			border-radius: 50%;*/
@@ -926,3 +961,29 @@
 			}
 	}
 //musicPlayPanel.vue
+
+//音乐盒旋转动画
+		@-moz-keyframes rotate{
+            0%{
+              -moz-transform:rotate(0deg);
+             }
+             100%{
+               -moz-transform:rotate(360deg);
+             }
+          }
+          @-webkit-keyframes rotate{
+            0%{
+              -webkit-transform:rotate(0deg);
+             }
+             100%{
+               -webkit-transform:rotate(360deg);
+             }
+          }
+          @keyframes rotate{
+            0%{
+              transform:rotate(0deg);
+             }
+             100%{
+               transform:rotate(360deg);
+             }
+          }

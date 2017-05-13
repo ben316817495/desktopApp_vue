@@ -691,6 +691,9 @@ body {
 .musicPanel .el-tree-node__expand-icon {
   border-left-color: rgba(190, 190, 190, 0.7);
 }
+.musicPlayPanel {
+  position: relative;
+}
 .musicPlayPanel .playAnimation {
   width: 300px;
   height: 300px;
@@ -701,6 +704,11 @@ body {
   background-size: 98%;
   background-repeat: no-repeat;
   background-position: 6px 3px;
+}
+.musicPlayPanel .playAnimation.addPlayAnimation {
+  -moz-animation: rotate 20s infinite linear;
+  -webkit-animation: rotate 20s infinite linear;
+  animation: rotate 20s infinite linear;
 }
 .musicPlayPanel .playMusicTitle,
 .musicPlayPanel .musicMess {
@@ -717,6 +725,29 @@ body {
 .musicPlayPanel .musicControl {
   margin-top: 20px;
 }
+.musicPlayPanel .likeMusicBtn,
+.musicPlayPanel .shareMusicBtn,
+.musicPlayPanel .loopMusicBtn {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 26px;
+  text-align: center;
+  cursor: pointer;
+}
+.musicPlayPanel .likeMusicBtn:hover,
+.musicPlayPanel .shareMusicBtn:hover,
+.musicPlayPanel .loopMusicBtn:hover {
+  color: #E4371C;
+  /*.ww-backgroud-colorRGB(rgba(190,190,190,0.2));*/
+}
+.musicPlayPanel .likeMusicBtn {
+  right: 0;
+}
+.musicPlayPanel .shareMusicBtn {
+  right: 42px;
+}
 .musicPlayPanel .timeText-left,
 .musicPlayPanel .timeText-right {
   height: 36px;
@@ -729,6 +760,7 @@ body {
   height: 100%;
   display: block;
   font-size: 20px;
+  cursor: pointer;
 }
 .musicPlayPanel .timeText-left a:hover,
 .musicPlayPanel .timeText-right a:hover {
@@ -759,6 +791,8 @@ body {
   width: 100px;
 }
 .musicPlayPanel .musicControl_btn ul {
+  width: 250px;
+  margin: 0 auto;
   text-align: center;
   display: flex;
   display: -webkit-flex;
@@ -771,6 +805,7 @@ body {
   text-align: center;
   font-size: 26px;
   list-style: none;
+  cursor: pointer;
   /*float: left;*/
   /*border: 1px solid rgba(190, 190, 190, 0.1);
 			border-radius: 50%;*/
@@ -796,4 +831,28 @@ body {
   -ms-transform: scale(1.5);
   transform: scale(1.5);
   background-color: #E4371C;
+}
+@-moz-keyframes rotate {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
