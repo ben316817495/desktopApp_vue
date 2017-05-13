@@ -635,6 +635,18 @@ body {
   line-height: 50px;
   padding-left: 10px;
 }
+.musicPanel .topConBtn {
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 20px;
+  margin-right: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.musicPanel .topConBtn:hover {
+  color: #E4371C;
+}
 .musicPanel .el-menu {
   background-color: rgba(0, 0, 0, 0);
 }
@@ -831,6 +843,25 @@ body {
   -ms-transform: scale(1.5);
   transform: scale(1.5);
   background-color: #E4371C;
+}
+.musicMainIndex .bannerDiv {
+  margin-top: 10px;
+}
+.musicMainIndex .theBanner {
+  text-align: center;
+}
+.musicMainIndex .el-carousel__item h3 {
+  color: #475669;
+  font-size: 18px;
+  opacity: 0.75;
+  line-height: 300px;
+  margin: 0;
+}
+.musicMainIndex .el-carousel__item:nth-child(2n) {
+  background-color: none;
+}
+.musicMainIndex .el-carousel__item:nth-child(2n+1) {
+  background-color: none;
 }
 @-moz-keyframes rotate {
   0% {

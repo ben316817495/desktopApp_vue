@@ -14,10 +14,10 @@
 					         </el-col>
 					         <el-col :span="18">
 					            <div class="btnGroup">
-					                   <a class="controlBtn yellowBtn" @click="">
+					                   <a class="topConBtn" @click="">
 					                      <i class="icon-minus"></i>
 					                  </a>
-					                  <a class="controlBtn redCloseBtn" @click="iconCloseBtn">
+					                  <a class="topConBtn" @click="iconCloseBtn">
 					                      <i class="icon-power"></i>
 					                  </a>
 					            </div>
