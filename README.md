@@ -1,16 +1,20 @@
 #VUE桌面应用页面
 
 ``` bash
-# install dependencies
+
+### 进入项目
+cd my-project
+
+### 安装依赖
 npm install
 
-# serve with hot reload at localhost:8080
+### 运行项目
 npm run dev
 
-# build for production with minification
+### 构建项目
 npm run build
 
-# build for production and view the bundle analyzer report
-npm run build --report
+
+
 ```
 
