@@ -2,6 +2,8 @@
 
 >  基于vue的桌面应用
 
+> vue-cli + router + element UI
+
 ``` bash
 
 ### 进入项目
