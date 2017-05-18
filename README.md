@@ -4,6 +4,8 @@
 
 > vue-cli + router + element UI
 
+> demo 地址 ：http://vue.wangmc.cn/vue/
+
 ``` bash
 
 ### 进入项目
