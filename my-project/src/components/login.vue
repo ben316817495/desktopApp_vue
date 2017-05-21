@@ -56,19 +56,22 @@
   		},//data
   		 methods: {
   		 	onSubmit(){
-  		 		//router.replace('/');
-				  this.$http.get(_url+'login/cellphone?phone='+this.form.phone+'&password='+this.form.password).then(response => {
-				    // get body data
-				    this.someData = response.body;
-				    console.log(this.someData)
-				    router.replace('/');
-				    //router.go('/');
-  		 			//this.$router.push('/');
+  		 		router.replace('/');
+  		 	// 	//-------测试音乐接口-------------
+				  // this.$http.get(_url+'login/cellphone?phone='+this.form.phone+'&password='+this.form.password).then(response => {
+				  //   // get body data
+				  //   this.someData = response.body;
+				  //   console.log(this.someData)
+				  //   router.replace('/');
+				  //   //router.go('/');
+  		 	// 		//this.$router.push('/');
 
-				  }, response => {
-				    // error callback
-				    console.log(response)
-				  });
+				  // }, response => {
+				  //   // error callback
+				  //   console.log(response)
+				  // });
+  		 	// 	//-------测试音乐接口-------------
+
   		 	},//onSubmit()
   		 },// methods
 	}
