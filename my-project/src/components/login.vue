@@ -11,10 +11,10 @@
 			<div class="boxBody">
 				<el-form ref="form" :model="form" label-width="80px">
 						<el-form-item label="用户名：">
-					    	<el-input v-model="form.name"></el-input>
+					    	<el-input v-model="form.phone"></el-input>
 					 	</el-form-item>
 					 	<el-form-item label="密码：">
-					    	<el-input v-model="form.pwd"></el-input>
+					    	<el-input type="password" v-model="form.password"></el-input>
 					 	</el-form-item>
 						<el-form-item >
 							<el-row>
@@ -46,17 +46,30 @@
 	  data() {
       	return {
 	      	form: {
-	      			name:'',
-	      			pwd:'',
+	      			phone:'',
+	      			password:'',
 	      			delivery: false,
 	      			type: [],
-	      		}
+	      		},
+	      		someData:{},
       		}
   		},//data
   		 methods: {
   		 	onSubmit(){
-  		 		this.$router.push('/');
-  		 	}//onSubmit()
+  		 		//router.replace('/');
+				  this.$http.get(_url+'login/cellphone?phone='+this.form.phone+'&password='+this.form.password).then(response => {
+				    // get body data
+				    this.someData = response.body;
+				    console.log(this.someData)
+				    router.replace('/');
+				    //router.go('/');
+  		 			//this.$router.push('/');
+
+				  }, response => {
+				    // error callback
+				    console.log(response)
+				  });
+  		 	},//onSubmit()
   		 },// methods
 	}
 </script>

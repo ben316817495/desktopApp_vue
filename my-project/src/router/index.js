@@ -25,6 +25,8 @@ export default new Router({
         {path: '/musicMainIndex',name: 'musicMainIndex',component: musicMainIndex},
         {path: '/musicPlayPanel',name: 'musicPlayPanel',component: musicPlayPanel}
       ]
+    },{ 
+      path: '/index', redirect: '/' 
     },{
        path: '/folderPanel',
        name: 'folderPanel',
