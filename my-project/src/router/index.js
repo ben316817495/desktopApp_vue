@@ -28,7 +28,13 @@ export default new Router({
       children: [
          {path: '/folderPopup',name: 'folderPopup',component: folderPopup},
          {path: '/cmdApplication',name: 'cmdApplication',component: cmdApplication},
-         {path: '/musicPanel',name: 'musicPanel',component: musicPanel}
+         {path: '/musicPanel',name: 'musicPanel',component: musicPanel,
+         children: [
+          {path: '/', redirect: '/musicMainIndex'},
+          {path: '/musicMainIndex',name: 'musicMainIndex',component: musicMainIndex},
+          {path: '/musicPlayPanel',name: 'musicPlayPanel',component: musicPlayPanel}
+         ]
+       }
 
         // {path: '/musicMainIndex',name: 'musicMainIndex',component: musicMainIndex},
         // {path: '/musicPlayPanel',name: 'musicPlayPanel',component: musicPlayPanel}
