@@ -49,7 +49,9 @@ export default {
   },//data()
   methods: {
     iconCloseBtn(){
-      this.$emit('btnListenEvent','close');
+     // router.go(-1)
+      router.replace('/');
+      //this.$emit('btnListenEvent','close');
     },//iconCloseBtn()
   },//methods
 }
